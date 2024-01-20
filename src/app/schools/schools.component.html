@@ -1,0 +1,21 @@
+
+<table>
+
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Since</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      @for (school of schools; track $index) {
+        <tr>
+          <td>{{school['id']}}</td>
+          <td>{{school['name']}}</td>
+          <td>{{school['since']}}</td>
+        </tr>
+      }
+    </tbody>
+  </table>

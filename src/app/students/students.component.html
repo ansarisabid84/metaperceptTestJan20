@@ -1,0 +1,27 @@
+
+<table>
+
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Roll No</th>
+        <th>Last Name</th>
+        <th>Middle Name</th>
+        <th>First Name</th>
+        <th>Date of Joining</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      @for (student of students; track $index) {
+        <tr>
+          <td>{{student['id']}}</td>
+          <td>{{student['rollno']}}</td>
+          <td>{{student['lastname']}}</td>
+          <td>{{student['middlename']}}</td>
+          <td>{{student['firstname']}}</td>
+          <td>{{student['dateOfJoining']}}</td>
+        </tr>
+      }
+    </tbody>
+  </table>

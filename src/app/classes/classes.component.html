@@ -1,0 +1,25 @@
+<table>
+
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>School Id</th>
+        <th>Students</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      @for (class of classes; track $index) {
+        <tr>
+          <td>{{class['id']}}</td>
+          <td>{{class['school-id']}}</td>
+          <!-- @for (student of class['students']; track $index) {
+  
+          } -->
+          <td>--</td>
+          <td>{{class['status']}}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
